@@ -2,11 +2,12 @@
 <html>
   <head>
     <title>KABOOM SKURWYSYNIE</title>
-    <link rel="icon" type="image/x-icon" href="/img/icon.png">
+    <link rel="icon" type="image/x-icon" href="/src/icon.png">
   </head>
   <body>
     <script>
-        while(1)location.reload(1)
+      new Audio("/src/boom.mp3").play().then(a => a.loop = true);
+      setTimeout(function(){while(1)location.reload(1)}, 500);
     </script>
   </body>
 </html>
