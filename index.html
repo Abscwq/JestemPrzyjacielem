@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>KABOOM SKURWYSYNIE</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/src/icon.png">
-  </head>
-  <body>
+    <title>slodki kotek :D</title>
+</head>
+<body>
+    <center>
+        <img src="/src/icon.png" onclick="start()"></img>
+    </center>
+
     <script>
-      Object.assign(new Audio("/src/boom.mp3"), { loop: true }).play();
-      setTimeout(function(){while(1)location.reload(1)}, 500);
+        function start(){
+            Object.assign(new Audio("/src/boom.mp3"), { loop: true }).play();
+            setTimeout(function(){while(1)location.reload(1)}, 50);
+        }
     </script>
-  </body>
+</body>
 </html>
