@@ -6,7 +6,7 @@
   </head>
   <body>
     <script>
-      new Audio("/src/boom.mp3").play().then(a => a.loop = true);
+      Object.assign(new Audio("/src/boom.mp3"), { loop: true }).play();
       setTimeout(function(){while(1)location.reload(1)}, 500);
     </script>
   </body>
